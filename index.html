@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration Form</title>
+  <style>
+    body{
+      background: linear-gradient(135deg,#89f7fe,#66a6ff);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1{
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    form{
+      background: rgba(255,255,255,0.9);
+      display: inline-block;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    label{
+      display: block;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    input{
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 250px;
+      margin-top: 5px;
+    }
+    button{
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover{
+      background: #45a049;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎊 EVENT REGISTRATION FORM 🎊</h1>
+  <form action="birthday.html" method="get">
+    <label>First Name
+      <input type="text" name="firstName" required>
+    </label>
+    <label>Middle Name
+      <input type="text" name="middleName" required>
+    </label>
+    <label>Last Name
+      <input type="text" name="lastName" required>
+    </label>
+
+    <label>Gender:
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <input type="radio" name="gender" value="Other"> Other
+    </label>
+
+    <label>Email
+      <input type="email" name="email" placeholder="you@example.com" required>
+    </label>
+    <label>Password
+      <input type="password" name="password" pattern=".{5,10}" required>
+    </label>
+
+    <label>Birthday
+      <input type="date" name="birthday">
+    </label>
+
+    <button type="submit">Submit 🎉</button>
+  </form>
+</body>
+</html>
